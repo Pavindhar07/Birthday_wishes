@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/* Global Times New Roman typography specification */
+*,
+*::before,
+*::after {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select,
+option,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+label,
+div {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+@layer base {
+  html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Times New Roman", Times, serif !important;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  #root {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img, svg, video, canvas {
+    display: block;
+    max-width: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display, .font-script, .font-cinzel, .font-sans, .font-serif, .font-mono {
+    font-family: "Times New Roman", Times, serif !important;
+  }
+}
+
+/* Custom glowing and text visibility utility classes */
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.4), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-glow-rose {
+  text-shadow: 0 0 20px rgba(244, 63, 94, 0.4), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.glass-card-premium {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 25px 60px -15px rgba(244, 63, 94, 0.22), 0 0 0 1px rgba(255, 255, 255, 0.9) inset;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
+
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-float-subtle {
+  animation: float-subtle 4s ease-in-out infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Happiest Birthday....",
+  "description": "An interactive, beautifully animated surprise web app for your best friend featuring passcode entry, floating helium balloons, memories gallery, an interactive jar of little notes, and a candle-blowing cake cutting finale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
